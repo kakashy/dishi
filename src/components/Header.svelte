@@ -21,7 +21,7 @@
 		<button class="closebtn" on:click={(e) => closeMenu(e)}>&uarr;</button>
 		<a class:active={$page.path === '/'} href="/">Home</a>
 		<a class:active={$page.path === '/menu'} href="/menu">Menu</a>
-		<a class:active={$page.path === '/about-us'} href="/about-us">About Us</a>
+		<a class:active={$page.path === '/menu'} href="/about-us">About Us</a>
 	</nav>
 </header>
 
