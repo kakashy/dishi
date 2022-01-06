@@ -19,9 +19,9 @@
 	<button on:click={openMenu}>&rarr;</button>
 	<nav id="nav-menu" transition:fly={{ y: -100, duration: 700 }}>
 		<button class="closebtn" on:click={(e) => closeMenu(e)}>&uarr;</button>
-		<a class:active={$page.path === '/'} href="/">Home</a>
-		<a class:active={$page.path === '/menu'} href="/menu">Menu</a>
-		<a class:active={$page.path === '/menu'} href="/menu">About Us</a>
+		<a class:active={$page.url.pathname === '/'} href="/">Home</a>
+		<a class:active={$page.url.pathname === '/menu'} href="/menu">Menu</a>
+		<a class:active={$page.url.pathname === '/menu'} href="/menu">About Us</a>
 	</nav>
 </header>
 
